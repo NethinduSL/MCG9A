@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCG O/L</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic styling for the modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+            max-width: 500px; /* Maximum width for the modal */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+        }
+
+        /* Close button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .contact-btn {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.jpg" alt="Club Logo">
+        </div>
+        <ul class="navbar-links">
+            <li><a class="hov" href="index.html">Home</a></li>
+            <li><a class="hov" href="indexs.html">සිංහල</a></li>
+            <li><a class="ah" href="index.html">Contact</a></li>
+            <li><a class="ah" href="index.html">Search</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="content-container">
+        <div class="con">
+            <h1>OL Subjects Contact</h1><br>
+            <ul class="subject-list">
+                <!-- List of Subjects -->
+                <li class="subject-item">
+                    <div>
+                        <h2>History</h2>
+                    </div>
+                    <button class="contact-btn" onclick="openModal('History', '+94743510306', '+94703483862');"><i class="fa-solid fa-phone"></i></button>
+                </li>
+                <li class="subject-item">
+                    <div>
+                        <h2>Science</h2>
+                    </div>
+                    <button class="contact-btn" onclick="openModal('Science', '+94713557516', '+94772969149');"><i class="fa-solid fa-phone"></i></button>
+                </li>
+                <li class="subject-item">
+                    <div>
+                        <h2>Sinhala</h2>
+                    </div>
+                    <button class="contact-btn" onclick="openModal('Sinhala', '+94776036944', '+94712259163');"><i class="fa-solid fa-phone"></i></button>
+                </li>
+                <li class="subject-item">
+                    <div>
+                        <h2>Maths</h2>
+                    </div>
+                    <button class="contact-btn" onclick="openModal('Maths', '+94771986515', '+94775583733');"><i class="fa-solid fa-phone"></i></button>
+                </li>
+                <li class="subject-item">
+                    <div>
+                        <h2>Buddhism</h2>
+                    </div>
+                    <button class="contact-btn" onclick="openModal('Buddhism', '+94773541932', '+94761559140');"><i class="fa-solid fa-phone"></i></button>
+                </li>
+                <li class="subject-item">
+                    <div>
+                        <h2>English</h2>
+                    </div>
+                    <button class="contact-btn" onclick="openModal('English', '+94777229242', '+94773580485');"><i class="fa-solid fa-phone"></i></button>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Contact Options</h2>
+            <button class="contact-btn" id="phone1" onclick="makeCall('+94743510306')">Call First Contact</button>
+            <button class="contact-btn" id="phone2" onclick="makeCall('+94743510307')">Call Second Contact</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSubject = '';
+        let currentNumber1 = '';
+        let currentNumber2 = '';
+    
+        function openModal(subject, number1, number2) {
+            currentSubject = subject;
+            currentNumber1 = number1;
+            currentNumber2 = number2;
+            document.getElementById("modal-title").innerText = `Contact Options for ${currentSubject}`;
+            document.getElementById("phone1").onclick = function() { makeCall(currentNumber1); };
+            document.getElementById("phone2").onclick = function() { makeCall(currentNumber2); };
+            document.getElementById("myModal").style.display = "flex"; // Change to flex to center
+        }
+    
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    
+        function makeCall(number) {
+            window.location.href = 'tel:' + number;
+            closeModal();
+        }
+    
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target == document.getElementById("myModal")) {
+                closeModal();
+            }
+        }
+    
+        // Ensure the modal is closed on page load
+        window.onload = function() {
+            closeModal();
+        };
+    </script>
+</body>
+</html>

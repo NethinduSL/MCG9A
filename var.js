@@ -4,7 +4,7 @@ const config = {
 };
 // var.js
 const config2 = {
-site2: "https://surveyheart.com/form/6740885debad23283684a9a8" // Replace with the actual URL
+site2: "https://surveyheart.com/form/6745c15a214d3c28bcf5e83a" // Replace with the actual URL
 };
 
 

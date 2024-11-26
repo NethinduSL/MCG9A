@@ -1,6 +1,6 @@
 const schedule = {
     "2024-11-25": "History",
-    "2024-11-26": "Science",
+    "2024-11-26": "Science ",
     "2024-11-27": "English",
     "2024-11-28": "Science",
     "2024-11-29": "Geography",
@@ -33,7 +33,7 @@ function displayMessage(time, currentDate) {
 
     if ((hours === 5 && minutes >= 30) || (hours < 9)) {
         if (subject) {
-            document.getElementById("message").innerHTML = "NOW" + subject;
+            document.getElementById("message").innerHTML = "NOW " + subject;
         } else {
             document.getElementById("message").innerHTML = "No subject now";
         }

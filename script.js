@@ -3,7 +3,7 @@ const schedule = {
     "2024-11-26": "Science ",
     "2024-11-27": "Sinhala",
     "2024-11-28": "Sinhala",
-    "2024-11-29": "Geography",
+    "2024-11-29": "Mathematics",
     "2024-11-30": "Art",
     "2024-12-01": "PE",
     "2024-12-02": "Music",

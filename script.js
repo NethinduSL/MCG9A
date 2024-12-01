@@ -4,11 +4,12 @@ const schedule = {
     "2024-11-27": "Sinhala",
     "2024-11-28": "Sinhala",
     "2024-11-29": "Mathematics",
-    "2024-11-30": "Art",
-    "2024-12-01": "PE",
-    "2024-12-02": "Music",
-    "2024-12-03": "Biology",
-    "2024-12-04": "Chemistry"
+    "2024-11-30": "Today is free",
+    "2024-12-01": "Today is free",
+    "2024-12-02": " Buddhism ",
+    "2024-12-03": "English ",
+    "2024-12-04": "Today is free",
+    "2024-12-05": "History 2"
 };
 
 function getTime() {

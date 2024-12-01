@@ -1,6 +1,6 @@
 // var.js
 const config = {
-    site: "https://surveyheart.com/form/6748a4b0e699da6d8cb236b7"
+    site: "https://surveyheart.com/form/674c8335d00cce35fc2b1a16"
 };
 // var.js
 const config2 = {

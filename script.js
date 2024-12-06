@@ -9,7 +9,8 @@ const schedule = {
     "2024-12-02": " Buddhism ",
     "2024-12-03": "English ",
     "2024-12-04": "Today is free",
-    "2024-12-05": "History 2"
+    "2024-12-05": "History 2",
+        "2024-12-06": "Science 2"
 };
 
 function getTime() {

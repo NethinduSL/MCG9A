@@ -12,7 +12,8 @@ const schedule = {
     "2024-12-05": "History 2",
         "2024-12-06": "Science 2",
     "2024-12-10": "Mathematics 2",
-        "2024-12-12": "Buddhism 2"
+        "2024-12-12": "Buddhism 2",
+    "2024-12-13": "English 2"
 };
 
 function getTime() {

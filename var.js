@@ -1,10 +1,10 @@
 // var.js
 const config = {
-    site: "https://surveyheart.com/form/675f049f88657618197fc0cd"
+    site: "https://surveyheart.com/form/676047b9f544d217b4ea8647"
 };
 // var.js
 const config2 = {
-site2: "https://surveyheart.com/form/675f053c217b9917f73ce1f6" // Replace with the actual URL
+site2: "https://surveyheart.com/form/676047d52505a317f8d4bba8" // Replace with the actual URL
 };
 
 
